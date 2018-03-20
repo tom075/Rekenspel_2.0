@@ -1,0 +1,97 @@
+@font-face {
+  font-family: font;
+  src: url("font/font.ttf");
+}
+
+body {
+  font-family: font;
+  background-color: yellow;
+  font-size: 3em;
+  text-align: center;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0;
+}
+
+#grid, #som, #resultaat, #vraag {
+  border-style: solid;
+  font-size: 40px;
+}
+
+table, td {
+  border-style: solid;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  height: 300px;
+  width: 400px;
+  font-size: 2em;
+  background-color: red;
+  color: yellow;
+  border: dashed;
+  margin-top: 2em;
+}
+
+#restart {
+  display: none;
+  margin-top: 20px;
+  height: 180px;
+  width: 420px;
+  border-radius: 1em;
+}
+
+#wrapper {
+  background-color: white;
+  margin-left: 40%;
+  margin-right: 40%;
+  border-style: ridge;
+  border-width: 10px;
+  border-color: red;
+  display: none;
+  margin-top: 4em;
+}
+
+#result {
+  margin-top: 30px;
+  display: none;
+}
+
+@media screen and (max-width: 1400px) {
+  #wrapper {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #wrapper {
+    margin-left: 16%;
+    margin-right: 16%;
+  }
+}
+
+#myAnswer {
+  font-family: font;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+  margin-left: 25px;
+  font-size: 1em;
+  width: 200px;
+  background-color: yellow;
+}
